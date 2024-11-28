@@ -1,0 +1,83 @@
+{
+  "name": "@escapace/typescript-library-starter",
+  "description": "",
+  "version": "0.0.0",
+  "author": {
+    "name": "escapace",
+    "email": "opensource@escapace.com"
+  },
+  "bugs": "https://github.com/escapace/typescript-library-starter/issues",
+  "devDependencies": {
+    "@commitlint/cli": "19.6.0",
+    "@commitlint/config-conventional": "19.6.0",
+    "@escapace/pnpm-pack": "0.5.2",
+    "@ls-lint/ls-lint": "2.2.3",
+    "@types/node": "22.10.1",
+    "@vitest/coverage-v8": "2.1.6",
+    "eslint": "9.15.0",
+    "eslint-config-escapace": "5.3.1",
+    "esroll": "0.3.0",
+    "jsdom": "25.0.1",
+    "knip": "5.38.2",
+    "lefthook": "1.8.4",
+    "prettier": "3.4.1",
+    "prettier-config-escapace": "1.2.1",
+    "syncpack": "13.0.0",
+    "tsx": "4.19.2",
+    "typescript": "5.7.2",
+    "vitest": "2.1.6"
+  },
+  "engines": {
+    "node": ">=20.15.0",
+    "pnpm": ">=9.11.0"
+  },
+  "exports": {
+    ".": {
+      "node": {
+        "import": {
+          "types": "./lib/types/index.d.ts",
+          "default": "./lib/node/index.js"
+        }
+      },
+      "browser": {
+        "import": {
+          "types": "./lib/types/index.d.ts",
+          "default": "./lib/browser/index.js"
+        }
+      },
+      "default": {
+        "import": {
+          "types": "./lib/types/index.d.ts",
+          "default": "./lib/node/index.js"
+        }
+      }
+    }
+  },
+  "files": [
+    "lib/browser",
+    "lib/node",
+    "lib/types"
+  ],
+  "homepage": "https://github.com/escapace/typescript-library-starter#readme",
+  "license": "MPL-2.0",
+  "private": false,
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  },
+  "repository": "escapace/typescript-library-starter",
+  "scripts": {
+    "build": "tsx scripts/build.ts",
+    "format": "syncpack format && eslint --no-warn-ignored --fix && prettier -uw .",
+    "lint": "ls-lint --config .ls-lint.yaml && knip --no-config-hints && eslint",
+    "ls-lint": "ls-lint --config .ls-lint.yaml",
+    "pack": "pnpm-pack package --pack-destination lib",
+    "prepare": "lefthook install",
+    "syncpack": "syncpack fix-mismatches && syncpack set-semver-ranges && syncpack format",
+    "test": "vitest --no-watch --coverage",
+    "typecheck": "tsc --noEmit"
+  },
+  "sideEffects": false,
+  "type": "module",
+  "types": "./lib/types/index.d.ts"
+}
