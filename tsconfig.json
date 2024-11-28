@@ -9,7 +9,7 @@
     "forceConsistentCasingInFileNames": true,
     "importHelpers": false,
     "isolatedModules": true,
-    "lib": ["DOM", "DOM.Iterable", "esnext"],
+    "lib": ["DOM", "DOM.Iterable", "esnext", "webworker"],
     "module": "esnext",
     "moduleResolution": "bundler",
     "noFallthroughCasesInSwitch": true,

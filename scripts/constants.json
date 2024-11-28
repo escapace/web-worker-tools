@@ -10,17 +10,6 @@
       "outdir": "lib/browser",
       "platform": "browser",
       "target": ["chrome128", "firefox130", "edge128", "opera113", "safari17.6"]
-    },
-    "node": {
-      "define": {
-        "__ENVIRONMENT__": "\"production\"",
-        "__PLATFORM__": "\"node\""
-      },
-      "entryPoints": ["src/index.ts"],
-      "mainFields": ["module", "main"],
-      "outdir": "lib/node",
-      "platform": "node",
-      "target": ["node20.15.0"]
     }
   }
 }

@@ -1,1 +1,1 @@
-# typescript-library-starter
+# @escapace/web-worker-tools

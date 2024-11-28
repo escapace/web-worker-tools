@@ -1,2 +1,6 @@
-export const hello = async (name: number | string): Promise<string> =>
-  await Promise.resolve(`Hello ${name}`)
+export { createWorkerScope, isDedicatedWorkerGlobalScope } from './create-worker-scope'
+export type {
+  DedicatedWorkerGlobalScopeFallback,
+  WorkerFallback,
+  WorkerScope,
+} from './create-worker-scope'
