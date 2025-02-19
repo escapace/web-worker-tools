@@ -8,23 +8,23 @@
   },
   "bugs": "https://github.com/escapace/web-worker-tools/issues",
   "devDependencies": {
-    "@commitlint/cli": "19.6.0",
-    "@commitlint/config-conventional": "19.6.0",
+    "@commitlint/cli": "19.7.1",
+    "@commitlint/config-conventional": "19.7.1",
     "@escapace/pnpm-pack": "0.5.4",
     "@ls-lint/ls-lint": "2.2.3",
-    "@vitest/coverage-v8": "3.0.4",
-    "eslint": "9.15.0",
+    "@vitest/coverage-v8": "3.0.5",
+    "eslint": "9.20.1",
     "eslint-config-escapace": "5.4.4",
     "esroll": "0.4.0",
     "jsdom": "25.0.1",
-    "knip": "5.38.2",
-    "lefthook": "1.8.4",
-    "prettier": "3.4.1",
+    "knip": "5.44.1",
+    "lefthook": "1.10.10",
+    "prettier": "3.5.0",
     "prettier-config-escapace": "1.2.1",
-    "syncpack": "13.0.0",
+    "syncpack": "13.0.2",
     "tsx": "4.19.2",
-    "typescript": "5.7.2",
-    "vitest": "3.0.4"
+    "typescript": "5.7.3",
+    "vitest": "3.0.5"
   },
   "engines": {
     "pnpm": ">=9.11.0"
